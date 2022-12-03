@@ -1,0 +1,293 @@
+/* 
+    Document   : main
+    Created on : 18.5.2016, 16:51:15
+    Author     : rastislavujmiak
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body{
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: background-color 500ms ease-out 200ms;
+    -moz-transition: background-color 500ms ease-out 200ms;
+    -o-transition: background-color 500ms ease-out 200ms;
+    transition: background-color 500ms ease-out 200ms;
+}
+body.fp-viewing-issue5 {
+    background: #00c1b5;
+}
+body.fp-viewing-issue4 {
+    background: #ff6519;
+}
+body.fp-viewing-issue3 {
+    background: #ffbe00;
+}
+body.fp-viewing-issue2 {
+    background: #1d3fbb;
+}
+body.fp-viewing-issue1 {
+    background: #E30512;
+}
+p{
+    color: #251d20;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+}
+a{
+    color: #251d20;
+    text-decoration: underline;
+}
+a:hover, a:focus, a:active{
+    color: #251d20;
+    text-decoration: none;
+}
+a.link2{
+    text-decoration: none;
+}
+a.link2:hover, a.link2:focus, a.link2:active{
+    text-decoration: underline;
+}
+.header{
+    padding-top: 20px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    z-index: 2;
+}
+.header img{
+    width: 260px;
+    height: auto;
+}
+.middle{
+    padding-top: 35px;
+}
+.middle .cover{
+    text-align: center;
+}
+.middle .cover img{
+    width: 420px;
+}
+.middle .cover p{
+    margin-top: 0px;
+}
+.footer{
+    position: relative;
+}
+.footer .contact{
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    margin-top: 0;
+}
+.copyright {
+    font-size: 12px;
+    font-weight: normal;
+}
+.orin{
+    font-size: 15px;
+    padding-top: 3px;
+    line-height: 22px;
+}
+.orin a{
+    color: #e568ac;
+    text-decoration: none;
+}
+.orin a:hover{
+    text-decoration: underline;
+}
+body.fp-viewing-issue5 .orin a,
+body.fp-viewing-issue4 .orin a,
+body.fp-viewing-issue3 .orin a,
+body.fp-viewing-issue2 .orin a,
+body.fp-viewing-issue1 .orin a {
+    color: #fff;
+}
+.shopifybuttondiv{
+    margin: 0 auto;
+    padding-left: 0px;
+    margin-top: -26px;
+    width: 116px;
+    margin-bottom: 15px
+}
+.shopify-buy__btn {
+    background-color: #ffffff !important;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+.shopify-buy__btn[disabled] {
+    background-color: #ffffff !important;
+}
+.soldoutb p {
+    font-size: 14px;
+    padding: 5px 10px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: bold;
+    letter-spacing: 0;
+    position: relative;
+    margin-left: 0!important;
+    background-color: #ffffff;
+    border-color: #f2f2f2;
+    color: #e30512;
+    border-radius: 5px;
+}
+
+/*.menu{
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    width: 200px;
+    text-align: right;
+    display: none;
+}
+.menu a{
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+body.fp-viewing-issue1 .menu a.issue3{
+    opacity: 1;
+    z-index: 3;
+}
+body.fp-viewing-issue2 .menu a.issue1{
+    opacity: 1;
+    z-index: 3;
+}
+body.fp-viewing-issue3 .menu a.issue2{
+    opacity: 1;
+    z-index: 3;
+}*/
+
+.menu {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;
+    width: 200px;
+    text-align: right;
+    display: none;
+    z-index: 3;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.menu a {
+    text-decoration: none;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+body.fp-viewing-issue1 .menu a.issue1 {
+    font-weight: bold;
+}
+body.fp-viewing-issue2 .menu a.issue2 {
+    font-weight: bold;
+}
+body.fp-viewing-issue3 .menu a.issue3 {
+    font-weight: bold;
+}
+body.fp-viewing-issue4 .menu a.issue4 {
+    font-weight: bold;
+}
+
+@media (min-width: 992px) and (min-height: 650px){
+    .middle .cover{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .footer{
+        position: static;
+    }
+    .footer .contact{
+        text-align: right;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+    .footer .description{
+        position: absolute;
+        bottom: 0;
+        left: 22px;
+        width: 320px;
+        margin-top: 0;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media (max-width: 991px) {
+    .footer{
+        position: relative;
+    }
+    .footer .description{
+        margin-top: 0px;
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: auto;
+    }
+}
+@media (max-width: 767px) {
+    .header img{
+        width: 160px;
+    }
+    .middle .cover img{
+        width: 80%;
+        max-width: 420px;
+        height: auto;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+    .footer p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .footer .contact{
+        position: relative;
+        right: auto;
+        text-align: center;
+    }
+    .orin{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.stocklist{
+    background: #FFF;
+    color: #231f20;
+}
+.stocklist h1{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.stocklist h2{
+    margin-top: 30px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.stocklist p{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+}
+.stocklist p a{
+    text-decoration: underline;
+}
+.stocklist p a:hover, .stocklist p a:active, .stocklist p a:focus{
+    text-decoration: none;
+    color: #1d3fbb;
+}

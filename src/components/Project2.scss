@@ -1,0 +1,66 @@
+:root {
+    --link-color: #e568ac;
+    --button-bg-color: rgb(126, 195, 255);
+    --button-color: rgb(2, 0, 67);
+}
+
+body {
+    background-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: background-color 500ms ease-out 200ms;
+    -moz-transition: background-color 500ms ease-out 200ms;
+    -o-transition: background-color 500ms ease-out 200ms;
+    transition: background-color 500ms ease-out 200ms;
+}
+
+.app__project2__container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.project2__card__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    scroll-snap-stop: always;
+    scroll-snap-align: end;
+}
+
+.project2__card {
+    width: 400px;
+    
+    img {
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.project2__card2__info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px 0px;
+
+    a{
+        color: var(--link-color);
+    }
+}
+
+.project2__button__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        padding: 0.3rem;
+        margin: 5px 3px;
+        outline: none;
+        background-color: var(--button-bg-color);
+        border-radius: 5px;
+        color: var(--button-color);
+    }
+}
